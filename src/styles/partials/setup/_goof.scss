@@ -1,0 +1,64 @@
+
+
+.goof-container {
+  margin: 40px 0 ;
+  background-image: url('https://zachschreiber.github.io/Stacy-runs-obx/images/goof.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-height: 100%;
+  //min-width: 1024px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+
+
+.animated-text {
+  position: relative;
+
+  &.goof-text {
+    margin-top: 100px;
+    font-size: 10em;
+    color: #fff;
+    font-family: $secondary;
+    text-shadow: 2px 2px 2px black;
+  }
+
+    &.slide-left {
+      //  opacity: 0;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+  -moz-transform: translate3d(-200px, 0px, 0px);
+  -webkit-transform: translate3d(-200px, 0px, 0px);
+  -o-transform: translate(-200px, 0px);
+  -ms-transform: translate(-200px, 0px);
+  transform: translate3d(-200px, 0px, 0px);
+}
+&.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+}
+
+}
+
+@media only screen and (max-width: 880px) {
+
+ .goof-container {
+   .animated-text {
+     &.goof-text {
+       font-size: 7em;
+       padding-left: 10px;
+     }
+   }
+ }
+}

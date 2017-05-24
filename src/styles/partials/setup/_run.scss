@@ -1,0 +1,93 @@
+
+.run-container {
+background-image: url('https://zachschreiber.github.io/Stacy-runs-obx/images/runner.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+min-height: 100%;
+width: 100%;
+height: auto;
+overflow: hidden;
+display:  flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+
+.animated-text {
+  position: relative;
+
+
+&.run-text {
+  padding: 5% 0 0 10%;
+  font-size: 17em;
+  color: #fff;
+  font-family: $secondary;
+  text-shadow: 2px 0px 2px black;
+  height: 90%;
+  width: 100%;
+}
+
+  &.appear {
+    opacity: 0;
+-moz-transition: all 3000ms ease-in;
+-webkit-transition: all 3000ms ease-in;
+-o-transition: all 3000ms ease-in;
+transition: all 3000ms ease-in;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
+  }
+  &.in-view {
+    opacity: 1;
+  }
+}
+
+.bottom-text-container {
+  margin-bottom: 40px;
+  text-align: right;
+  padding: 20px 50px 20px 0;
+  width: 100%;
+  background-color: rgba(155, 189, 201, 0.5);
+   .bottom-text {
+     text-align: right;
+     width: 100%;
+     height: 10%;
+     font-size: 5em;
+     color: #fff;
+     font-family: $secondary;
+     text-align: right;
+
+ }
+}
+}
+
+@media only screen and (max-width: 935px) {
+  .run-container {
+
+     .animated-text {
+       &.run-text {
+         font-size: 14em;
+         padding: 10% 0 0 10%;
+       }
+     }
+    .bottom-text-container {
+      .bottom-text {
+        font-size: 3em;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 770px) {
+  .run-container {
+
+     .animated-text {
+       &.run-text {
+         font-size: 10em;
+         padding: 20% 0 0 10%;
+       }
+     }
+   }
+}
