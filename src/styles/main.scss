@@ -4,63 +4,129 @@
 @import "partials/setup/goof";
 @import "partials/setup/travel";
 @import "partials/setup/run";
-
+@import "partials/setup/info";
 
 body {
   background-image: url('https://zachschreiber.github.io/Stacy-runs-obx/images/cheap_diagonal_fabric.png');
   background-attachment: fixed;
-  
 }
 
+.email-donate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 
-.race-info {
-  margin: 40px 0;
-  color: #4c4c4c;
-  font-family: $secondary;
-  padding: 20px;
-  font-size: 3em;
-  line-height: 80px;
-  background-color: #fff;
-
-.big-o {
-  font-size: 1.5em;
-}
-
-.purple {
-  color: $lightBlue;
-}
+  .email {
+    width: 50%;
+    border: 2px solid #fff;
+    margin-right: 30px;
 
 
-
-}
-
-  .map {
-    width: 200px;
-    height: 500px;
-    float: left;
-    margin: 20px 70px 20px 20px;
-    -moz-box-shadow: 1px 6px 14px #4a494a;
--webkit-box-shadow: 1px 6px 14px #4a494a;
-box-shadow: 1px 6px 14px #4a494a;
-
-  }
-
-  @media only screen and (max-width: 700px) {
-
-    .race-info {
+    #send-btn {
+      padding: 10px 0;
       font-size: 1.5em;
-      line-height: 60px;
+      width: 40%;
+      border-radius: 3px;
+      background-color: $darkBlue;
+      border: none;
+      color: #fff;
 
-      .big-o {
-        font-size: 1em;
+      span {
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+        &:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+      }
+
+      &:hover {
+        span {
+          padding-right: 25px;
+          &:after {
+        opacity: 1;
+        right: 0;
+      }
+      }
       }
     }
 
-    .map {
-      width: 150px;
-      height: 400px;
-      margin: 10px 40px 10px 10px;
-
+    .email-title {
+      text-align: center;
+      font-family: $mainFont;
+      font-size: 4em;
+      margin-top: 20px;
+      color: $darkBlue;
     }
 
+    form {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px;
+
+      .email-body,
+      .name,
+      .subject {
+        width: 90%;
+        font-size: 1em;
+        margin: 10px 0;
+        padding: 5px 0 5px 10px;
+        border: none;
+      }
+
+      textarea {
+        height: 100px;
+      }
+    }
   }
+
+  .donate {
+    border: 2px solid #fff;
+    p {
+      text-align: center;
+      font-family: $mainFont;
+      font-size: 4em;
+      margin-top: 20px;
+      color: $darkBlue;
+    }
+
+    img {
+      height: 300px;
+      margin: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+
+.email-donate {
+   .email {
+     width: 90%;
+     margin-right: 0;
+     margin-bottom: 30px;
+
+     .email-title {
+       font-size: 3em;
+     }
+   }
+
+   .donate {
+     img {
+       height: 250px;
+     }
+   }
+ }
+
+}
