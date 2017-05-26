@@ -26,8 +26,8 @@ nav {
   }
 
   .title-first {
-    -webkit-animation: 1.3s ease 0s normal forwards 1 titleFirst;
-    animation: 1.3s ease 0s normal forwards 1 titleFirst;
+    -webkit-animation: 1.3s ease 0.8s normal forwards 1 titleFirst;
+    animation: 1.3s ease 0.8s normal forwards 1 titleFirst;
   }
 
   @keyframes titleFirst{
@@ -43,8 +43,8 @@ nav {
   }
 
   .title-second {
-    -webkit-animation: 1s ease 1.5s normal forwards 1 titleSecond;
-    animation: 1s ease 1.5s normal forwards 1 titleSecond;
+    -webkit-animation: 1s ease 2.2s normal forwards 1 titleSecond;
+    animation: 1s ease 2.2s normal forwards 1 titleSecond;
   }
 
   @keyframes titleSecond{
@@ -59,8 +59,8 @@ nav {
   }
 
   .title-third {
-    -webkit-animation: 1s ease 2.8s normal forwards 1 titleThird;
-    animation: 1s ease 2.8s normal forwards 1 titleThird;
+    -webkit-animation: 1s ease 3.4s normal forwards 1 titleThird;
+    animation: 1s ease 3.4s normal forwards 1 titleThird;
   }
 
   @keyframes titleThird{
@@ -86,8 +86,8 @@ nav {
   font-size: 7em;
   font-family: $mainFont;
   color: #fff;
-  -webkit-animation: 5.5s ease 0s normal forwards 1 titleDelay;
-  animation: 5.5s ease 0s normal forwards 1 titleDelay;
+  -webkit-animation: 6.2s ease 0s normal forwards 1 titleDelay;
+  animation: 6.2s ease 0s normal forwards 1 titleDelay;
 
 }
 @keyframes titleDelay{
@@ -109,8 +109,8 @@ nav {
   color: #fff;
   top: 130px;
   left: 33%;
-  animation: upDown 1.5s ease-in-out 4s infinite;
-  -webkit-animation: 1.5s ease-in-out 4s infinite upDown;
+  animation: upDown 1.3s ease-in-out 4.7s infinite;
+  -webkit-animation: 1.3s ease-in-out 4.7s infinite upDown;
   z-index: 99;
   opacity: 0;
 }
@@ -155,18 +155,20 @@ nav {
 }
 
 .main-direct {
+  padding: 20px 50px 20px 0;
+  background-color: rgba(155, 189, 201, 0.5);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding-right: 50px;
   z-index: 99;
   color: #fff;
-  font-size: 6em;
+  font-size: 5em;
   height: 20%;
   width: 100%;
   font-family: $secondary;
-  -webkit-animation: 7s ease 0s normal forwards 1 mainDirect;
-  animation: 7s ease 0s normal forwards 1 mainDirect;
+  -webkit-animation: 7.7s ease 0s normal forwards 1 mainDirect;
+  animation: 7.7s ease 0s normal forwards 1 mainDirect;
 
 }
 
